@@ -8,10 +8,12 @@ if not cmp_nvim_lsp_status then
   return
 end
 
+--[[
 local typescript_setup, typescript = pcall(require, "typescript")
 if not typescript_setup then
   return
 end
+--]]
 
 local keymap = vim.keymap
 
@@ -39,6 +41,7 @@ end
 
 local capabilities = cmp_nvim_lsp.default_capabilities()
 
+--[[
 -- Настройка для ts_ls
 typescript.setup({
   server = {
@@ -50,6 +53,7 @@ typescript.setup({
     settings = { documentFormatting = false },  -- настройки, если нужны
   }
 })
+--]]
 
 lspconfig["cssls"].setup({
   capabilities = capabilities,

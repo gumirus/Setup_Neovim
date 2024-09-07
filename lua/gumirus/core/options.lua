@@ -1,3 +1,5 @@
+vim.cmd("let g:netrw_liststyle = 3")
+
 local opt = vim.opt -- for conciseness
 
 -- line numbers
@@ -26,6 +28,7 @@ opt.background = "dark"
 opt.signcolumn = "yes"
 
 -- backspace opt. backspace = "indent,eol,start"
+opt.backspace = "indent, oel, start"
 
 -- clipboard
 opt.clipboard:append ("unnamedplus")
@@ -33,5 +36,3 @@ opt.clipboard:append ("unnamedplus")
 -- split windows
 opt.splitright = true
 opt.splitbelow = true
-
-opt.iskeyword:append ("-")
