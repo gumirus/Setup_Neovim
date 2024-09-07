@@ -28,7 +28,7 @@ opt.background = "dark"
 opt.signcolumn = "yes"
 
 -- backspace opt. backspace = "indent,eol,start"
-opt.backspace = "indent, oel, start"
+opt.backspace = "indent,eol,start"
 
 -- clipboard
 opt.clipboard:append ("unnamedplus")
