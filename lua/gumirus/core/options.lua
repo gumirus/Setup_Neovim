@@ -15,11 +15,11 @@ opt.autoindent = true
 -- line wrapping
 opt.wrap = false
 
--- saerch settings
+-- search settings
 opt.ignorecase = true
 opt.smartcase = true
 
---cursor line
+-- cursor line
 opt.cursorline = true
 
 -- appearance
@@ -27,12 +27,15 @@ opt.termguicolors = true
 opt.background = "dark"
 opt.signcolumn = "yes"
 
--- backspace opt. backspace = "indent,eol,start"
-opt.backspace = "indent,eol,start"
+-- backspace
+opt.backspace = "indent,eol,start" -- исправлено
 
 -- clipboard
-opt.clipboard:append ("unnamedplus")
+opt.clipboard:append("unnamedplus")
 
 -- split windows
 opt.splitright = true
 opt.splitbelow = true
+
+-- keywords
+opt.iskeyword:append("-")

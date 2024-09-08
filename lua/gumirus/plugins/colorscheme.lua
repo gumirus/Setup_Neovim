@@ -8,38 +8,30 @@ return {
     local bg_search = "#0a64ac"
     local bg_visual = "#275378"
     local fg = "#cbe0f0"
-    local fg_dark = "#b4doe9"
-    local fg_guter = "#527e97"
+    local fg_dark = "#b4d0e9"
+    local fg_gutter = "#527e97"
     local border = "#547998"
 
     require("tokyonight").setup({
-      style = "storm",
-      transparent = false,
-      italic_comments = true,
-      sidebars = { "qf", "vista_kind", "terminal", "packer" },
-      colors = {
-        bg = bg,
-        bg_dark = bg_dark,
-        bg_light = bg_light,
-        bg_search = bg_search,
-        bg_visual = bg_visual,
-        fg = fg,
-        fg_dark = fg_dark,
-        fg_gutter = fg_guter,
-        border = border,
-        comment = "#5c6370",
-        cursor = "#528bff",
-        line = "#202328",
-        selection = "#3e4452",
-        builtin = "#e0af68",
-        keyword = "#c678dd",
-        variable = "#7ec0ee",
-        ["function"] = "#7ec0ee",
-        string = "#98c379",
-        operator = "#56b6c2",
-      },
-    }) -- Закрытие вызова функции здесь
-
+      style = "night",
+      on_colors = function(colors) 
+        colors.bg = bg
+        colors.bg_dark = bg_dark
+        colors.bg_float = bg_dark
+        colors.bg_highlight = bg_light
+        colors.bg_popup = bg_dark
+        colors.bg_search = bg_search
+        colors.bg_sidebar = bg_dark
+        colors.bg_statusline = bg_dark
+        colors.bg_visual = bg_visual
+        colors.border = border
+        colors.fg = fg
+        colors.fg_dark = fg_dark
+        colors.fg_float = fg
+        colors.fg_gutter = fg_gutter
+        colors.fg_sidebar = fg_dark
+      end
+    })
     vim.cmd("colorscheme tokyonight")
   end,
 }
