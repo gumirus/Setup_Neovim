@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 vim.cmd("let g:netrw_liststyle = 3")
 
 local opt = vim.opt -- for conciseness
@@ -37,5 +38,4 @@ opt.clipboard:append("unnamedplus")
 opt.splitright = true
 opt.splitbelow = true
 
--- keywords
---opt.iskeyword:append("-")
+
