@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 vim.cmd("let g:netrw_liststyle = 3")
 
 local opt = vim.opt -- for conciseness
@@ -29,7 +28,7 @@ opt.background = "dark"
 opt.signcolumn = "yes"
 
 -- backspace
-opt.backspace = "indent,eol,start" -- исправлено
+opt.backspace = "indent,eol,start"
 
 -- clipboard
 opt.clipboard:append("unnamedplus")
@@ -37,5 +36,3 @@ opt.clipboard:append("unnamedplus")
 -- split windows
 opt.splitright = true
 opt.splitbelow = true
-
-
