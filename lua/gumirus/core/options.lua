@@ -38,4 +38,4 @@ opt.splitright = true
 opt.splitbelow = true
 
 -- keywords
-opt.iskeyword:append("-")
+--opt.iskeyword:append("-")
