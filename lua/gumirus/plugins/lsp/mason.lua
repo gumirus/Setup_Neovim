@@ -34,6 +34,7 @@ return {
         "prismals",      -- Prisma
         "pyright",       -- Python
         -- "tsserver",      -- TypeScript ( не работает? )
+        "ts_ls",  -- Correct TypeScript server
       },
     })
   end,
