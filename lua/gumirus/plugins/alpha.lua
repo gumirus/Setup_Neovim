@@ -20,10 +20,14 @@ return {
     -- Set menu
     dashboard.section.buttons.val = {
       dashboard.button("e", "📄 > Новый файл", "<cmd>ene<CR>"),
-      dashboard.button("SPC ee", "📂 > Переключить проводник", "<cmd>NvimTreeToggle<CR>"),
-      dashboard.button("SPC ff", "🗂 > Найти файл", "<cmd>Telescope find_files<CR>"),
-      dashboard.button("SPC fs", "📝 > Найти слово", "<cmd>Telescope live_grep<CR>"),
-      dashboard.button("SPC wr", "♻️ > Восстановить сессию", "<cmd>SessionRestore<CR>"),
+      dashboard.button(
+        "пробел ee",
+        "📂 > Переключить проводник",
+        "<cmd>NvimTreeToggle<CR>"
+      ),
+      dashboard.button("пробел ff", "🗂 > Найти файл", "<cmd>Telescope find_files<CR>"),
+      dashboard.button("пробел fs", "📝 > Найти слово", "<cmd>Telescope live_grep<CR>"),
+      dashboard.button("пробел wr", "♻️  > Восстановить сессию", "<cmd>SessionRestore<CR>"),
       dashboard.button("q", "🚪 > Выйти из NVIM", "<cmd>qa<CR>"),
     }
 
