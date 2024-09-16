@@ -2,10 +2,10 @@ return {
   "kdheepak/lazygit.nvim",
   cmd = {
     "LazyGit",
-    "LazyGiConfig",
+    "LazyGitConfig",
     "LazyGitCurrentFile",
     "LazyGitFilter",
-    "LazyGitFilterCorrentFile",
+    "LazyGitFilterCurrentFile",
   },
   -- optional for floating window border decoration
   dependencies = {
